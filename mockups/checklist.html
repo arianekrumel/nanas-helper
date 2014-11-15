@@ -1,41 +1,66 @@
 <html>
 <head>
-	<title>Nana's Helper | Home</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<title>Nana's Helper | Checklist</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.purple.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div data-role="page">
-		<div data-role="header" style="overflow:hidden;">
+	<div data-role="page" data-theme='b'>
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
 			<h1>Checklist</h1>
-			<div data-role="navbar">
+			<div data-role="navbar" data-theme="b">
 				<ul>
 					<li><a href="#" class="ui-btn-active">All</a></li>
 					<li><a href="#">Done</a></li>
 					<li><a href="#">To Do</a></li>
 				</ul>
 			</div><!-- /navbar -->
-			<a data-ajax="false" href="patient.html" data-icon="back" class="ui-btn-left">Back</a>
-			<a data-ajax="false" href="vitals.html" data-icon="arrow-r" class="ui-btn-right">Vitals</a>
 		</div><!-- /header -->
 		<div role="main" class="ui-content">
-			<ul data-role="listview">
-				<li>Take Medicine #1</li>
-				<li>Check Vitals</li>
-				<li>Turn patient (left side)</li>
-				<li>Take Medicine #2</li>
-				<li>Bathroom break</li>
-				<li>Turn patient (right side)</li>
-			</ul>
+			<form>
+                <ul data-role="listview" data-inset="true">
+        
+                    <li data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                            <input type="checkbox" name="checkbox-1a" id="checkbox-1ab" checked="">
+                            <label for="checkbox-1ab">Take Medicine #1</label>
+                            <input type="checkbox" name="checkbox-2a" id="checkbox-2ab">
+                            <label for="checkbox-2ab">Check Vitals</label>
+                            <input type="checkbox" name="checkbox-3a" id="checkbox-3ab">
+                            <label for="checkbox-3ab">Turn patient (left side)</label>
+                            <input type="checkbox" name="checkbox-4a" id="checkbox-4ab">
+                            <label for="checkbox-4ab">Take Medicine #2</label>
+                            <input type="checkbox" name="checkbox-5a" id="checkbox-4ab">
+                            <label for="checkbox-5ab">Bathroom break</label>
+                            <input type="checkbox" name="checkbox-6a" id="checkbox-4ab">
+                            <label for="checkbox-6ab">Turn patient (right side)</label>
+                        </fieldset>
+                    </li>
+         		</ul>
+         	</form>
 			<br />
 			<p><a data-ajax="false" href="reports.html" class="ui-btn">Go to Reports</a></p>
 		</div>
-		<div data-role="footer" class="footer">
-			<p><caption>Nana's Helper</caption></p>
-		</div><!-- /footer -->
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a data-ajax="false" href="patient.html">
+						<i class='blIcon fa fa-users'></i>Patients</a></li>
+					<li><a data-ajax="false" href="vitals.html">
+						<i class='blIcon fa fa-heart'></i>Vitals</a></li>
+					<li><a data-ajax="false" href="home.html">
+						<i class='blIcon fa fa-sign-out'></i>Log Out</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

@@ -1,15 +1,20 @@
 <html>
 <head>
-	<title>Nana's Helper | Home</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<title>Nana's Helper | Vitals</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css" />
+	<link rel="stylesheet" href="css/jquerymobile.nativedroid.color.purple.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div data-role="page">
-		<div data-role="header" style="overflow:hidden;">
+	<div data-role="page" data-theme='b'>
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
 			<h1>Vitals</h1>
 			<div data-role="navbar">
 				<ul>
@@ -18,8 +23,6 @@
 					<li><a href="#">To Do</a></li>
 				</ul>
 			</div><!-- /navbar -->
-			<a data-ajax="false" href="patient.html" data-icon="back" class="ui-btn-left">Back</a>
-			<a data-ajax="false" href="checklist.html" data-icon="arrow-r" class="ui-btn-right">Checklist</a>
 		</div><!-- /header -->
 		<div role="main" class="ui-content">
 			<ul data-role="listview">
@@ -32,9 +35,18 @@
 			<br />
 			<p><a data-ajax="false" href="reports.html" class="ui-btn">Go to Reports</a></p>
 		</div>
-		<div data-role="footer" class="footer">
-			<p><caption>Nana's Helper</caption></p>
-		</div><!-- /footer -->
+		<div data-position="fixed" data-tap-toggle="false" data-role="footer" data-tap-toggle="false" data-theme='b'>
+			<div data-role="navbar">
+				<ul>
+					<li><a data-ajax="false" href="patient.html">
+						<i class='blIcon fa fa-users'></i>Patient</a></li>
+					<li><a data-ajax="false" href="checklist.html">
+						<i class='blIcon fa fa-list'></i>Checklist</a></li>
+					<li><a data-ajax="false" href="home.html">
+						<i class='blIcon fa fa-sign-out'></i>Log Out</a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

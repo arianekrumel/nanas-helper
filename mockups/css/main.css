@@ -9,10 +9,11 @@
 h1 {
 
 }
+.ui-header .ui-title, .ui-footer .ui-title {
+	margin: 3px 25px 7px 15px;
+}
 .footer p {
 	text-align: center;
-	font-family: 'Pacifico', cursive;
-	font-size: 110%
 }
 .error {
 	color: red;
