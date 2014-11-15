@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>Nana's Helper | Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header" style="overflow:hidden;">
+			<h1>Checklist</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" class="ui-btn-active">All</a></li>
+					<li><a href="#">Done</a></li>
+					<li><a href="#">To Do</a></li>
+				</ul>
+			</div><!-- /navbar -->
+			<a data-ajax="false" href="patient.html" data-icon="back" class="ui-btn-left">Back</a>
+			<a data-ajax="false" href="vitals.html" data-icon="arrow-r" class="ui-btn-right">Vitals</a>
+		</div><!-- /header -->
+		<div role="main" class="ui-content">
+			<ul data-role="listview">
+				<li>Take Medicine #1</li>
+				<li>Check Vitals</li>
+				<li>Turn patient (left side)</li>
+				<li>Take Medicine #2</li>
+				<li>Bathroom break</li>
+				<li>Turn patient (right side)</li>
+			</ul>
+			<br />
+			<p><a data-ajax="false" href="reports.html" class="ui-btn">Go to Reports</a></p>
+		</div>
+		<div data-role="footer" class="footer">
+			<p><caption>Nana's Helper</caption></p>
+		</div><!-- /footer -->
+	</div>
+</body>
+</html>

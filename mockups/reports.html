@@ -1,0 +1,88 @@
+<html>
+<head>
+	<title>Nana's Helper | Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header" style="overflow:hidden;">
+			<h1>Reports</h1>
+			<!--<div data-role="navbar" data-iconpos="left">
+				<ul>
+					<li>
+						<a data-icon="bars" href="#" class="ui-btn-active">Table</a>
+					</li>
+					<li><a data-icon="grid" href="#">Grid</a></li>
+				</ul>
+			</div> /navbar -->
+			<a data-ajax="false" href="patient.html" data-icon="back" class="ui-btn-left">Back</a>
+			<a data-ajax="false" href="checklist.html" data-icon="arrow-r" class="ui-btn-right">Export</a>
+		</div><!-- /header -->
+		<div role="main" class="ui-content">
+			<table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke">
+				<thead>
+				<tr>
+					<th data-priority="1"></th>
+					<th data-priority="1">Item</th>
+					<th data-priority="2"><abbr title="Date">Last Updated</abbr></th>
+					<th data-priority="1">Value</th>
+					<th data-priority="3">Notes</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr class="error">
+					<td>!</td>
+					<td>Blood Pressure</td>
+					<td>11/14/14</td>
+					<td>135/88</td>
+					<td>High in the morning</td>
+				</tr>
+				<tr class="error">
+					<td>!</td>
+					<td>Medication #1</td>
+					<td>11/14/14</td>
+					<td>Missed Dose</td>
+					<td></td>
+				</tr>
+				<tr class="warning">
+					<td>*</td>
+					<td>Skin Condition</td>
+					<td>11/14/14</td>
+					<td>Mottling</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Weight</td>
+					<td>11/14/14</td>
+					<td>168 lbs</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Medication #2</td>
+					<td>11/14/14</td>
+					<td>Current</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Blood Sugar</td>
+					<td>11/14/14</td>
+					<td>80 mg/dL</td>
+					<td></td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+		<div data-role="footer" class="footer">
+			<p><caption>Nana's Helper</caption></p>
+			<a data-ajax="false" href="home.html" data-icon="back" class="ui-btn-left">Log Out</a>
+		</div><!-- /footer -->
+	</div>
+</body>
+</html>
